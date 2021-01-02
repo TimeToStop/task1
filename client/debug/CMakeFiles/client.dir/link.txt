@@ -1,0 +1,1 @@
+/usr/bin/g++   -pthread -g   CMakeFiles/client.dir/main.cpp.o CMakeFiles/client.dir/thread.cpp.o CMakeFiles/client.dir/clientsocket.cpp.o  -o client 

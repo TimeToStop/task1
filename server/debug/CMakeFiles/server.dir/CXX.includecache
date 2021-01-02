@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/timetostop/projects/try-to-work/infotecs/task1/server/main.cpp
+iostream
+-
+serversocket.h
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocket.h
+serversocketexception.h
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocketexception.h
+
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocket.cpp
+serversocket.h
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocket.h
+serversocketexception.h
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocketexception.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+netdb.h
+-
+
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocket.h
+string
+-
+
+/home/timetostop/projects/try-to-work/infotecs/task1/server/serversocketexception.h
+stdexcept
+-
+
