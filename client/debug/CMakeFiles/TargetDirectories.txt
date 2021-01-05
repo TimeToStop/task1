@@ -1,4 +1,0 @@
-/home/timetostop/projects/try-to-work/infotecs/task1/client/debug/CMakeFiles/rebuild_cache.dir
-/home/timetostop/projects/try-to-work/infotecs/task1/client/debug/CMakeFiles/edit_cache.dir
-/home/timetostop/projects/try-to-work/infotecs/task1/client/debug/CMakeFiles/server.dir
-/home/timetostop/projects/try-to-work/infotecs/task1/client/debug/CMakeFiles/client.dir

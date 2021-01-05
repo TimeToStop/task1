@@ -11,13 +11,20 @@ int main()
         std::string str;
         ServerSocket s(1000);
         s.init(3000);
+
+        std::cout << "Server started on port 3000:" << std::endl;
+
         int client = s.accept();
 
-        while(str != "exit")
+        std::cout << "Client connected" << std::endl;
+
+        while(true)
         {
             str = s.read(client);
 
-            if (str.size() >= 2 && std::stoi(str.c_str()) % 32 == 0)
+            if(str =="exit") break;
+
+            if (str.size() >= 2 && str.size() % 32 == 0)
             {
                 std::cout << "Correct data accepted:\n" << str << std::endl;
             }

@@ -7,22 +7,21 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 
 add_executable(server
-    server/main.cpp
-    server/serversocket.cpp
-    server/serversocket.h
-    shared/socketexception.cpp
-    shared/socketexception.h
+    src/server/main.cpp
+    src/server/serversocket.cpp
+    src/server/serversocket.h
+    src/shared/socketexception.cpp
+    src/shared/socketexception.h
 )
 
 
 add_executable(client
-    client/main.cpp
-    client/worker.cpp
-    client/worker.h
-    client/clientsocket.cpp
-    client/clientsocket.h
-    client/thread.cpp
-    shared/socketexception.cpp
-    shared/socketexception.h
+    src/client/main.cpp
+    src/client/worker.cpp
+    src/client/worker.h
+    src/client/clientsocket.cpp
+    src/client/clientsocket.h
+    src/shared/socketexception.cpp
+    src/shared/socketexception.h
 )
 

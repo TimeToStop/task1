@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/server.dir/main.cpp.o CMakeFiles/server.dir/serversocket.cpp.o CMakeFiles/server.dir/serversocketexception.cpp.o  -o server 
