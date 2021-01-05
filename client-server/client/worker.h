@@ -1,6 +1,8 @@
 #ifndef WORKER_H
 #define WORKER_H
 
+#include "clientsocket.h"
+
 #include <atomic>
 #include <condition_variable>
 #include <pthread.h>
@@ -14,16 +16,17 @@
 class Worker
 {
 public:
-    Worker();
+    Worker(ClientSocket* socket);
     ~Worker();
 
     void startDetached();
-    void addMessage(const std::string&);
+    void addMessage(const std::string& message);
     void exit();
 
     void process();
 
 private:
+    ClientSocket* _socket;
     std::mutex _m;
     std::condition_variable _cv;
     bool _is_exit;

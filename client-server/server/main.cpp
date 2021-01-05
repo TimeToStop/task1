@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <cstring>
+
 #include "serversocket.h"
 
 int main()
@@ -15,7 +17,7 @@ int main()
         {
             str = s.read(client);
 
-            if (str.size() >= 2 && str.size() % 32 == 0)
+            if (str.size() >= 2 && std::stoi(str.c_str()) % 32 == 0)
             {
                 std::cout << "Correct data accepted:\n" << str << std::endl;
             }
